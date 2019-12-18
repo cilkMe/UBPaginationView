@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TempCell">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNa-t8-IhK">
+                        <rect key="frame" x="59" y="81.5" width="44" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-bD-jBR">
+                        <rect key="frame" x="103" y="73.5" width="8" height="8"/>
+                        <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="g8y-H3-JaC"/>
+                            <constraint firstAttribute="width" constant="8" id="yxa-ae-HXE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YNa-t8-IhK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="GUV-Yd-8z0"/>
+                <constraint firstItem="YNa-t8-IhK" firstAttribute="trailing" secondItem="0cJ-bD-jBR" secondAttribute="trailing" constant="-8" id="H0Q-N8-HQx"/>
+                <constraint firstItem="YNa-t8-IhK" firstAttribute="top" secondItem="0cJ-bD-jBR" secondAttribute="top" constant="8" id="J7b-Nb-w7d"/>
+                <constraint firstItem="YNa-t8-IhK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xxF-yl-wM8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="162" height="184"/>
+            <connections>
+                <outlet property="red_view" destination="0cJ-bD-jBR" id="a5J-x7-VKl"/>
+                <outlet property="title_lab" destination="YNa-t8-IhK" id="AhV-q5-NI8"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="207"/>
+        </collectionViewCell>
+    </objects>
+</document>
